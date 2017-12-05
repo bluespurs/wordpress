@@ -63,8 +63,8 @@ default['wordpress']['config_perms'] = 0644
 default['wordpress']['server_aliases'] = [node['fqdn']]
 default['wordpress']['server_port'] = '80'
 
-default['wordpress']['install']['user'] = node['apache']['user']
-default['wordpress']['install']['group'] = node['apache']['group']
+default['wordpress']['install']['user']  = "apache"
+default['wordpress']['install']['group'] = "apache"
 
 # Languages
 default['wordpress']['languages']['lang'] = ''
